@@ -1,0 +1,116 @@
+.login-page {
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-box {
+    width: 321px;
+    text-align: center;
+}
+
+.login-logo h4 {
+    color: #2D333A;
+    // font-family: 'Test Founders Grotesk', Medium;
+    font-size: 36px;
+    // font: normal normal medium 36px/43px Test Founders Grotesk;
+    text-align: center;
+}
+
+.login-box .card {
+    border: none;
+    display: flex;
+    flex-direction: column;
+
+    .card-body {
+        flex: 1 1 auto;
+    }
+
+    .email-input {
+        border: 1px solid #C2C8D0;
+        border-radius: 3px;
+        padding: 10px;
+        width: 320px;
+        height: 52px;
+
+        &::placeholder {
+            color: #6F7984;
+            font-size: 18px;
+            letter-spacing: 0.2px;
+        }
+    }
+
+    .btn-continue {
+        box-shadow: none;
+        background: #10A37F 0% 0% no-repeat padding-box;
+        border-radius: 3px;
+        color: #fff;
+        width: 320px;
+        height: 52px;
+        margin-top: 25px;
+        font-size: 18px;
+        letter-spacing: 0.2px;
+        // font-family: 'Test Founders Grotesk', Light;
+    }
+
+    .sign-para {
+        margin-top: 25px;
+
+        p {
+            font-size: 16px;
+            letter-spacing: 0.18px;
+            color: #6F7984;
+            margin-left: 20px;
+            text-align: center;
+            // font-family: 'Test Founders Grotesk', Regular;
+
+            span {
+                color: #10A37F;
+                letter-spacing: 0.18px;
+                cursor: pointer;
+                font-size: 16px;
+                // font-family: 'Test Founders Grotesk', Regular;
+            }
+        }
+    }
+}
+
+.card .card-body-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .option {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 35px;
+        p {
+            margin-top: 15px;
+            color: #6F7984;
+            font-size: 15px;
+            letter-spacing: 0.17px;
+        }
+    }
+}
+
+.hr-left {
+    border-top: 1px solid #C2C8D0;
+    width: 121px;
+    height: 1px;
+    margin-right: 20px;
+}
+
+.hr-right {
+    border-top: 1px solid #C2C8D0;
+    width: 133px;
+    height: 1px;
+    margin-left: 20px;
+}
