@@ -11,14 +11,26 @@
 .login-box {
     width: 321px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .login-logo h4 {
     color: #2D333A;
     // font-family: 'Test Founders Grotesk', Medium;
-    font-size: 36px;
+    font-size: 35px;
     // font: normal normal medium 36px/43px Test Founders Grotesk;
     text-align: center;
+}
+
+.login-logo p {
+    color: #6F7984;
+    letter-spacing: 0.15px;
+    padding-top: 14px;
+    width: 359px;
+    padding-left: 9px;
 }
 
 .login-box .card {
@@ -36,6 +48,7 @@
         padding: 10px;
         width: 320px;
         height: 52px;
+        margin-bottom: 25px;
 
         &::placeholder {
             color: #6F7984;
@@ -51,7 +64,7 @@
         color: #fff;
         width: 320px;
         height: 52px;
-        margin-top: 25px;
+        // margin-top: 25px;
         font-size: 18px;
         letter-spacing: 0.2px;
         // font-family: 'Test Founders Grotesk', Light;
@@ -64,7 +77,6 @@
             font-size: 16px;
             letter-spacing: 0.18px;
             color: #6F7984;
-            margin-left: 20px;
             text-align: center;
             // font-family: 'Test Founders Grotesk', Regular;
 
@@ -74,6 +86,9 @@
                 cursor: pointer;
                 font-size: 16px;
                 // font-family: 'Test Founders Grotesk', Regular;
+                &:hover{
+                    text-decoration: underline;
+                }
             }
         }
     }
@@ -92,6 +107,7 @@
         justify-content: center;
         align-items: center;
         margin-left: 35px;
+
         p {
             margin-top: 15px;
             color: #6F7984;
@@ -113,4 +129,32 @@
     width: 133px;
     height: 1px;
     margin-left: 20px;
+}
+
+.half-input {
+    width: 140px;
+    border: 1px solid #C2C8D0;
+    border-radius: 3px;
+    padding: 10px;
+    height: 52px;
+    margin-bottom: 25px;
+}
+.select-country{
+    width: 65px;
+    border: 1px solid #C2C8D0;
+    border-radius: 3px;
+    padding: 10px;
+    height: 52px;
+    margin-bottom: 25px;
+}
+.phone{
+    width: 232px;
+    border: 1px solid #C2C8D0;
+    border-radius: 3px;
+    padding: 10px;
+    height: 52px;
+    margin-bottom: 25px;
+}
+.phone-number-div{
+    width: 418px;
 }

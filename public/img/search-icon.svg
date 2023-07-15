@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+  <g id="_00_General_01_Icons_02_Common_01_Settings" data-name="00 General / 01 Icons / 02 Common / 01 Settings" transform="translate(0 0)">
+    <rect id="BG" width="15" height="15" transform="translate(0 0)" fill="none"/>
+    <path id="color" d="M10.353,11a.649.649,0,0,1-.4-.136L9.9,10.81l-2.1-2.1a4.809,4.809,0,0,1-2.943.994A4.853,4.853,0,1,1,9.706,4.853,4.808,4.808,0,0,1,8.712,7.8l2.1,2.1a.647.647,0,0,1-.457,1.1Zm-5.5-9.706A3.559,3.559,0,1,0,7.147,7.573a.646.646,0,0,1,.426-.427A3.559,3.559,0,0,0,4.853,1.294Z" transform="translate(2 2)" fill="#f5f6fa"/>
+  </g>
+</svg>

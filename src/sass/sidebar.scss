@@ -1,0 +1,223 @@
+body {
+    height: 100%;
+}
+
+.sidebar {
+    background: #202123;
+    width: 275px;
+    // width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    color: #fff;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    float: left;
+    // background: #202123;
+    // /* width: 275px; */
+    // height: 100%;
+    // min-height: 100vh;
+    // width: 100%;
+    // color: #fff;
+    // display: grid;
+    // grid-template-rows: auto 1fr auto;
+    // float: left;
+
+}
+
+.sidebar-top {
+    padding: 10px;
+}
+
+.chat-section-row {
+    margin-right: -11px;
+}
+
+.chat .plus-icon {
+    background-image: url('../../public/img/Add.svg');
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 17px;
+    left: 28px;
+    background-repeat: no-repeat;
+    z-index: 1;
+    background-size: 13px 13px;
+}
+
+.chat .new-chat {
+    position: relative;
+    box-shadow: none;
+    background: #202123;
+    border: 1px solid #D5D7E3;
+    border-radius: 3px;
+    color: #fff;
+    padding: 22px;
+    width: 202px;
+    cursor: pointer;
+
+    p {
+        position: absolute;
+        bottom: -5px;
+        left: 40px;
+
+    }
+}
+
+.chat-icon {
+    border: 1px solid #D5D7E3;
+    border-radius: 3px;
+    padding: 13px;
+    width: 46px;
+    height: 46px;
+}
+
+.chat-icon .icon {
+    background-image: url('../../public/img/Group2.svg');
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: 16px 18px;
+    cursor: pointer;
+}
+
+.search-section {
+    padding-top: 9px;
+
+    input {
+        position: relative;
+        width: 257px;
+        height: 46px;
+        background: #202123;
+        border: 1px solid #D5D7E3;
+        border-radius: 6px;
+        color: #fff;
+        padding-left: 12px;
+
+        &::placeholder {
+            color: #D5D7E3;
+        }
+    }
+
+    .search-icon {
+        position: absolute;
+        background-image: url('../../public/img/search-icon.svg');
+        width: 19px;
+        height: 19px;
+        background-repeat: no-repeat;
+        top: 15px;
+        right: 20px;
+        z-index: 1;
+        background-size: 17px 22px;
+    }
+}
+
+.yesterday-chat {
+    margin-top: 16px;
+
+    .heading {
+        padding-left: 25px;
+
+        span {
+            letter-spacing: 0.15px;
+            color: #D5D7E3;
+            font-size: 14px;
+        }
+    }
+
+    ul {
+        margin-top: 0.75rem;
+        margin-bottom: 0.75rem;
+        margin-left: -32px;
+
+        li {
+            list-style: none;
+            padding-top: 8px;
+            // padding-bottom: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            cursor: pointer;   
+            margin-right: 6px;
+
+            &:hover{
+                transition: 0.3s;
+                background: #282A2E;
+                border-radius: 6px;
+            }
+
+            .icon {
+                background-image: url('../../public/img/message.svg');
+                width: 20px;
+                height: 20px;
+                background-repeat: no-repeat;
+                background-size: 16px 17px;
+                margin-bottom: 8px;
+                padding-left: 24px;
+            }
+
+            .text {
+                letter-spacing: 0.18px;
+                color: #F5F6FA;
+            }
+        }
+    }
+}
+
+.sidebar-footer {
+    grid-row: 3;
+    border-top: 1px solid #D5D7E3;
+    margin-left: 5px;
+    padding: 14px 0px 14px 22px;
+    margin-right: 10px;
+}
+
+.templete {
+    display: flex;
+    flex-direction: row;
+
+    .icon {
+        background-image: url('../../public/img/menu.svg');
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        margin-top: 6px;
+        margin-right: 20px;
+        background-repeat: no-repeat;
+    }
+
+    p {
+        color: #F5F6FA;
+        font-size: 16px;
+    }
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+
+    .profile-icon {
+        background-image: url('../../public/img/user.jpg');
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        margin-top: 4px;
+        margin-right: 20px;
+    }
+
+    p {
+        font-size: 16px;
+        color: #F5F6FA;
+        padding-top: 2px;
+    }
+}
+
+.profile{
+    .option-icon{
+        background-image: url('../../public//img/option.svg');
+        width: 20px;
+        height: 5px;
+        background-repeat: no-repeat;
+        display: inline-block;
+    }
+}
