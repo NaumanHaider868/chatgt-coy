@@ -5,7 +5,7 @@ function Navbar() {
     return (
         <div className='navbar-1'>
             <div className='navbar-componet navbar-2'>
-                <ul className="nav justify-content-center nav-select">
+                <ul className="nav-select">
                     {/* <li className="nav-item">
                         <a className="nav-link active" href="#">Active</a>
                     </li>
