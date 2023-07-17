@@ -1,7 +1,11 @@
 import React from 'react'
 import '../sass/Login.scss'
-
+import { useNavigate } from 'react-router-dom'
 function TellUs() {
+    const navigate = useNavigate();
+    const nextPage = () => {
+        navigate('/number')
+    }
     return (
         <div className='login-page'>
             <div className='login-box'>
@@ -27,7 +31,7 @@ function TellUs() {
                         </div>
                         {/* <input type='email' placeholder='Email address' className='email-input' />
                         <input type='password' placeholder='Password' className='email-input' /> */}
-                        <button className='btn btn-continue'>Continue</button>
+                        <button className='btn btn-continue' onClick={nextPage}>Continue</button>
                         <div className='sign-para'>
                             <p>By clicking "continue", you agree to our <span>Terms</span> and condition our <span>privacy policy</span></p>
                         </div>

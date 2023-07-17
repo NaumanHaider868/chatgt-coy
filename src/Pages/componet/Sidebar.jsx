@@ -89,7 +89,7 @@ function Sidebar({ handleOpenModal }) {
                     </div>
                     {/* Previous Chat */}
 
-                    <div className='yesterday-chat'>
+                    <div className='yesterday-chat previous-p-b'>
                         <div className='heading'>
                             <span>Previous Days</span>
                         </div>

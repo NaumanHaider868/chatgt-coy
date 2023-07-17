@@ -1,7 +1,11 @@
 import React from 'react'
 import '../sass/Login.scss'
-
+import { useNavigate } from 'react-router-dom'
 function Number() {
+    const navigate = useNavigate();
+    const nextPage = () => {
+        navigate('/content')
+    }
     return (
         <div className='login-page'>
             <div className='login-box'>
@@ -18,7 +22,7 @@ function Number() {
                                 <input type='phone' placeholder='Phone' className='phone' />
                             </div>
                         </div>
-                        <button className='btn btn-continue'>Continue</button>
+                        <button className='btn btn-continue' onClick={nextPage}>Continue</button>
                         <div className='sign-para'>
                             <p>Don't have an account? <span>Sign up</span></p>
                         </div>

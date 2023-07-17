@@ -1,7 +1,11 @@
 import React from 'react'
 import '../sass/Login.scss'
-
+import { Link, useNavigate } from 'react-router-dom'
 function NewAccount() {
+    const navigate = useNavigate();
+    const nextPage = () => {
+        navigate('/telluseaboutyou')
+    }
     return (
         <div className='login-page'>
             <div className='login-box'>
@@ -13,14 +17,14 @@ function NewAccount() {
                     <div className='card-body'>
                         <input type='email' placeholder='Email address' className='email-input' />
                         <input type='password' placeholder='Password' className='email-input' />
-                        <button className='btn btn-continue'>Continue</button>
+                        <button className='btn btn-continue' onClick={nextPage}>Continue</button>
                         <div className='sign-para'>
-                            <p>Don't have an account? <span>Log in</span></p>
+                            <p>Already have an account? <span><Link style={{ color: '#10A37F' }} to='/'>Log in</Link></span></p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 

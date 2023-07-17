@@ -1,5 +1,6 @@
 import React from 'react'
 import '../sass/Login.scss'
+import { Link } from 'react-router-dom'
 
 function Login() {
     return (
@@ -13,7 +14,7 @@ function Login() {
                         <input type='email' placeholder='Email address' className='email-input' />
                         <button className='btn btn-continue'>Continue</button>
                         <div className='sign-para'>
-                            <p>Don't have an account? <span>Sign up</span></p>
+                            <p>Don't have an account? <span><Link style={{color:'#10A37F'}} to='/newaccount'>Sign up</Link></span></p>
                         </div>
 
                         {/* <div className='card-body-bottom'>
