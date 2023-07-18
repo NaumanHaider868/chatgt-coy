@@ -7,105 +7,209 @@ function ContentCopy() {
     return (
         <div>
             <Sidebar />
-            <Navbar />
-            <div className='dashboard'>
-                <div className='content'>
-                    <main className='h-full w-full flex flex-col flex-1'>
-                        <div className=''>
-                            <div className="main-content wrapper-container">
-                                <div className='user-chat bg-white'>
-                                    <div className='container'>
-                                        <div className='mr-auto'>
-                                            <div className="row">
+            <div className='main-wrapper'>
+                <Navbar />
+                <div className='dashboard'>
+                    <div className='content'>
+                        <main className='h-full w-full flex flex-col flex-1'>
+                            <div className="wrapper-container">
+                                <div>
+                                    <div className='user-chat bg-white'>
+                                        <div className='container'>
+                                            <div className='mr-auto'>
+                                                <div className="row">
+                                                    <div className="col-md-1"></div>
+                                                    <div className="col-md-1">
+                                                        <div className='user-image_div'>
+                                                            <div className='user-image'></div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-md-8 pl-0">
+                                                        <div className="chat-div_text">
+                                                            <p>Hy</p>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-md-1"></div>
+                                                    <div className="col-md-1"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='user-chat bg-gray'>
+                                        <div className="container">
+                                            <div className='row'>
                                                 <div className="col-md-1"></div>
-                                                <div className="col-md-1">
-                                                    <div className='user-image_div'>
-                                                        <div className='user-image'></div>
+                                                <div className='col-md-1'>
+                                                    <div className='chatgpt-div'>
+                                                        <div className='chatgpt-div_icon'></div>
                                                     </div>
                                                 </div>
-                                                <div className="col-md-8">
+                                                <div className="col-md-8 pl-0">
                                                     <div className="chat-div_text">
-                                                        <p>Hy</p>
+                                                        <p>Hello! How can I assist you today?</p>
+                                                    </div>
+                                                </div>
+                                                <div className="col-md-1">
+                                                    <div className="icons">
+                                                        <div className="copy"></div>
+                                                        <div className="like"></div>
+                                                        <div className="dislike"></div>
                                                     </div>
                                                 </div>
                                                 <div className="col-md-1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='user-chat bg-white'>
+                                        <div className='container'>
+                                            <div className='mr-auto'>
+                                                <div className="row">
+                                                    <div className="col-md-1"></div>
+                                                    <div className="col-md-1">
+                                                        <div className='user-image_div'>
+                                                            <div className='user-image'></div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-md-8 pl-0">
+                                                        <div className="chat-div_text">
+                                                            <p>Hy</p>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-md-1"></div>
+                                                    <div className="col-md-1"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='user-chat bg-gray'>
+                                        <div className="container">
+                                            <div className='row'>
+                                                <div className="col-md-1"></div>
+                                                <div className='col-md-1'>
+                                                    <div className='chatgpt-div'>
+                                                        <div className='chatgpt-div_icon'></div>
+                                                    </div>
+                                                </div>
+                                                <div className="col-md-8 pl-0">
+                                                    <div className="chat-div_text">
+                                                        <p>As an AI language model, I don't have feelings, but I'm here and ready to help you with any questions or information you need. How can I assist you today?</p>
+                                                    </div>
+                                                </div>
+                                                <div className="col-md-1">
+                                                    <div className="icons">
+                                                        <div className="copy"></div>
+                                                        <div className="like"></div>
+                                                        <div className="dislike"></div>
+                                                    </div>
+                                                </div>
                                                 <div className="col-md-1"></div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='user-chat bg-gray'>
-                                    <div className="container">
-                                        <div className='row'>
-                                            <div className="col-md-1"></div>
-                                            <div className='col-md-1'>
-                                                <div className='chatgpt-div'>
-                                                    <div className='chatgpt-div_icon'></div>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-8">
-                                                <div className="chat-div_text">
-                                                    <p>Hello! How can I assist you today?</p>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-1">
-                                                <div className="icons">
-                                                    <div className="copy"></div>
-                                                    <div className="like"></div>
-                                                    <div className="dislike"></div>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-1"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* <div className='row'>
-                                <div className='col-md-12'>
-                                    <div className='user-chat'>
-                                        <div className='row'>
-                                            <div className='col-md-2'>
-                                                <div className='chatgpt-div'>
-                                                    <div className='chatgpt-icon'></div>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-8">
-                                                <div className="chat-div">
-                                                    <p>Hy</p>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-2"></div>
                                         </div>
                                     </div>
 
-                                </div>
-                                <div className='col-md-12'>
-                                    <div className="response-chat">
-                                        <div className='row'>
-                                            <div className='col-md-2'>
-                                                <div className='chatgpt-div'>
-                                                    <div className='chatgpt-div_icon'></div>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-8">
-                                                <div className="chat-div">
-                                                    <p>Hello! How can I assist you today?</p>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-2">
-                                                <div className="icons">
-                                                    <div className="copy"></div>
-                                                    <div className="like"></div>
-                                                    <div className="dislike"></div>
+                                    <div className='user-chat bg-white'>
+                                        <div className='container'>
+                                            <div className='mr-auto'>
+                                                <div className="row">
+                                                    <div className="col-md-1"></div>
+                                                    <div className="col-md-1">
+                                                        <div className='user-image_div'>
+                                                            <div className='user-image'></div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-md-8 pl-0">
+                                                        <div className="chat-div_text">
+                                                            <p>Hy</p>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-md-1"></div>
+                                                    <div className="col-md-1"></div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <div className='user-chat bg-gray'>
+                                        <div className="container">
+                                            <div className='row'>
+                                                <div className="col-md-1"></div>
+                                                <div className='col-md-1'>
+                                                    <div className='chatgpt-div'>
+                                                        <div className='chatgpt-div_icon'></div>
+                                                    </div>
+                                                </div>
+                                                <div className="col-md-8 pl-0">
+                                                    <div className="chat-div_text">
+                                                        <p>As an AI language model, I don't have feelings, but I'm here and ready to help you with any questions or information you need. How can I assist you today?</p>
+                                                    </div>
+                                                </div>
+                                                <div className="col-md-1">
+                                                    <div className="icons">
+                                                        <div className="copy"></div>
+                                                        <div className="like"></div>
+                                                        <div className="dislike"></div>
+                                                    </div>
+                                                </div>
+                                                <div className="col-md-1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='user-chat bg-white'>
+                                        <div className='container'>
+                                            <div className='mr-auto'>
+                                                <div className="row">
+                                                    <div className="col-md-1"></div>
+                                                    <div className="col-md-1">
+                                                        <div className='user-image_div'>
+                                                            <div className='user-image'></div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-md-8 pl-0">
+                                                        <div className="chat-div_text">
+                                                            <p>Hy</p>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-md-1"></div>
+                                                    <div className="col-md-1"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='user-chat bg-gray'>
+                                        <div className="container">
+                                            <div className='row'>
+                                                <div className="col-md-1"></div>
+                                                <div className='col-md-1'>
+                                                    <div className='chatgpt-div'>
+                                                        <div className='chatgpt-div_icon'></div>
+                                                    </div>
+                                                </div>
+                                                <div className="col-md-8 pl-0">
+                                                    <div className="chat-div_text">
+                                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, vel!</p>
+                                                    </div>
+                                                </div>
+                                                <div className="col-md-1">
+                                                    <div className="icons">
+                                                        <div className="copy"></div>
+                                                        <div className="like"></div>
+                                                        <div className="dislike"></div>
+                                                    </div>
+                                                </div>
+                                                <div className="col-md-1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div> */}
+
+                                <div className='bottom-content'>
+                                    <div className='bottom-div'>
+                                        <input type="text" placeholder='Send a message' className='input-send' />
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div className='bottom-content'></div>
-                    </main>
+
+                        </main>
+                    </div>
                 </div>
             </div>
         </div>

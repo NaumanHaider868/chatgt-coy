@@ -1,9 +1,68 @@
+body {
+    scrollbar-width: thin;
+    scrollbar-color: #ccc #f5f5f5;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #999;
+}
+
+.wrapper {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.main-wrapper {
+    width: 82.07%;
+}
+
+.chatgpt-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    margin-left: 12px;
+}
+
+.user-image_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .chatgpt-div_icon {
     width: 34px;
     height: 34px;
     background-image: url('../../public/img/chatgpt1.png');
     background-repeat: no-repeat;
     display: inline-block;
+}
+
+.chat-div_text {
+    line-height: 1.95rem;
+    color: #374151;
 }
 
 .like {
@@ -13,7 +72,7 @@
     background-repeat: no-repeat;
     display: inline-block;
     cursor: pointer;
-
+    padding: 14px;
 }
 
 .dislike {
@@ -23,6 +82,7 @@
     background-repeat: no-repeat;
     cursor: pointer;
     display: inline-block;
+    padding: 14px;
 }
 
 .copy {
@@ -32,8 +92,10 @@
     background-repeat: no-repeat;
     display: inline-block;
     cursor: pointer;
+    padding: 14px;
 }
-.user-image{
+
+.user-image {
     background-repeat: no-repeat;
     background-image: url('../../public/img/user2.png');
     width: 35px;
@@ -45,7 +107,7 @@
 
 .wrapper-container {
     overflow-y: auto;
-    height: 100vh;
+    // height: 100vh;
 }
 
 @media (max-width: 576px) {
@@ -88,4 +150,38 @@
     justify-content: center;
     align-items: center;
     padding: 30px 0 30px 0;
+}
+
+.bottom-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+// .bottom-div{
+//     position: fixed;
+//     bottom: 40px;
+//     box-shadow: 0px 3px 13px #00000024;
+//     border-radius: 12px;
+// }
+.bottom-div {
+    position: fixed;
+    bottom: 40px;
+    background-color: #fff;
+    box-shadow: 0px 3px 13px #00000024;
+    border-radius: 12px;
+}
+
+.input-send {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 13px #00000024;
+    border: 1px solid #d5d7e3;
+    border-radius: 12px;
+    width: 809px;
+    height: 61px;
+    padding-left: 26px;
+    // position: fixed;
+    // bottom: 46px;
+
 }

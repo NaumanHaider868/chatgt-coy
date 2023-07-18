@@ -4,13 +4,14 @@ body {
 
 .sidebar-content {
     background: #202123;
+    height: 100%;
 }
 
 .sidebar {
     background: #202123;
-    width: 285px;
-    // width: 100%;
-    height: 100vh;
+    // width: 285px;
+    width: 17.93%;
+    // height: 100vh;
     // min-height: 100vh;
     color: #fff;
     display: grid;
@@ -134,7 +135,7 @@ body {
 }
 
 .previous-p-b {
-    padding-bottom: 116px;
+    padding-bottom: 18px;
 }
 
 .yesterday-chat {
@@ -253,7 +254,7 @@ body {
     background: #202123;
     position: fixed;
     bottom: 0;
-    width: inherit;
+    width: 285px;
     padding: 0px 0px 14px 22px;
 }
 

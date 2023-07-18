@@ -146,66 +146,69 @@ function Sidebar({ handleOpenModal }) {
                     </div>
 
                 </div>
-            </div>
-            <div className='sidebar-footer'>
-                <div className='row footer-row'>
-                    {isDivVisible ? (
-                        <div className='col-md-12 profile-options'>
-                            <ul className="list-group option-group">
-                                <li className="list-group-item option-item">
-                                    <div className='option'>
-                                        <div className='delete'></div>
-                                        <div className='text'>Conversations</div>
-                                    </div>
-                                </li>
-                                <li className="list-group-item option-item">
-                                    <div className='option'>
-                                        <div className='help'></div>
-                                        <div className='text'>Help & FAQ</div>
-                                    </div>
-                                </li>
-                                <li className="list-group-item option-item">
-                                    <div className='option'>
-                                        <div className='setting'></div>
-                                        <div className='text'>Settings</div>
-                                    </div>
-                                </li>
-                                <li className="list-group-item option-item logout-border">
-                                    <div className='option'>
-                                        <div className='logout'></div>
-                                        <div className='text'>Log out</div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    ) : (
-                        <div className='col-md-12 templete' onClick={handleOpenModal}>
-                            <div className="templete-div">
-                                <div className='icon'></div>
-                                <div className='text'>
-                                    <p>Templates</p>
+                <div className='boder-top'>
+                    <div className='sidebar-footer'>
+                        <div className='row footer-row'>
+                            {isDivVisible ? (
+                                <div className='col-md-12 profile-options'>
+                                    <ul className="list-group option-group">
+                                        <li className="list-group-item option-item">
+                                            <div className='option'>
+                                                <div className='delete'></div>
+                                                <div className='text'>Conversations</div>
+                                            </div>
+                                        </li>
+                                        <li className="list-group-item option-item">
+                                            <div className='option'>
+                                                <div className='help'></div>
+                                                <div className='text'>Help & FAQ</div>
+                                            </div>
+                                        </li>
+                                        <li className="list-group-item option-item">
+                                            <div className='option'>
+                                                <div className='setting'></div>
+                                                <div className='text'>Settings</div>
+                                            </div>
+                                        </li>
+                                        <li className="list-group-item option-item logout-border">
+                                            <div className='option'>
+                                                <div className='logout'></div>
+                                                <div className='text'>Log out</div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </div>
-                        </div>
-                    )
-                    }
+                            ) : (
+                                <div className='col-md-12 templete' onClick={handleOpenModal}>
+                                    <div className="templete-div">
+                                        <div className='icon'></div>
+                                        <div className='text'>
+                                            <p>Templates</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                            }
 
 
-                    <div className='col-md-12 profile' onClick={handleClick}>
-                        <div className="row">
-                            <div className="col-md-9 user">
-                                <div className='profile-icon'></div>
-                                <div className='text'>
-                                    <p>Admin</p>
+                            <div className='col-md-12 profile' onClick={handleClick}>
+                                <div className="row">
+                                    <div className="col-md-9 user">
+                                        <div className='profile-icon'></div>
+                                        <div className='text'>
+                                            <p>Admin</p>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-3">
+                                        <div className='option-icon'></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="col-md-3">
-                                <div className='option-icon'></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     )
 }
