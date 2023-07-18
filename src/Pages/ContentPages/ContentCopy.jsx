@@ -5,7 +5,7 @@ import '../../sass/contentCopy.scss'
 
 function ContentCopy() {
     return (
-        <div>
+        <div className='wrapper'>
             <Sidebar />
             <div className='main-wrapper'>
                 <Navbar />
@@ -199,6 +199,7 @@ function ContentCopy() {
                                             </div>
                                         </div>
                                     </div>
+                                    
                                 </div>
 
                                 <div className='bottom-content'>
