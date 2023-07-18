@@ -1,0 +1,91 @@
+.chatgpt-div_icon {
+    width: 34px;
+    height: 34px;
+    background-image: url('../../public/img/chatgpt1.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.like {
+    width: 20px;
+    height: 20px;
+    background-image: url('../../public/img/like.svg');
+    background-repeat: no-repeat;
+    display: inline-block;
+    cursor: pointer;
+
+}
+
+.dislike {
+    width: 20px;
+    height: 20px;
+    background-image: url('../../public/img/dislike.svg');
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.copy {
+    width: 20px;
+    height: 20px;
+    background-image: url('../../public/img/copy.svg');
+    background-repeat: no-repeat;
+    display: inline-block;
+    cursor: pointer;
+}
+.user-image{
+    background-repeat: no-repeat;
+    background-image: url('../../public/img/user2.png');
+    width: 35px;
+    height: 33px;
+    display: inline-block;
+    background-size: 32px;
+
+}
+
+.wrapper-container {
+    overflow-y: auto;
+    height: 100vh;
+}
+
+@media (max-width: 576px) {
+    .wrapper-container {
+        max-width: 540px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper-container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 992px) {
+    .wrapper-container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .wrapper-container {
+        max-width: 1140px;
+    }
+}
+
+.bg-gray {
+    background: #F7F7F8 0% 0% no-repeat padding-box;
+    padding: 30px 0 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-white {
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 30px 0;
+}

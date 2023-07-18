@@ -4,6 +4,7 @@ import NewAccount from "./Pages/NewAccount";
 import TellUs from "./Pages/TellUs";
 import Number from "./Pages/Number";
 import Content from "./Pages/ContentPages/Content";
+import ContentCopy from "./Pages/ContentPages/ContentCopy";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
         <Route path='/newaccount' element={<NewAccount/>} />
         <Route path='/telluseaboutyou' element={<TellUs/>} />
         <Route path='/number' element={<Number/>} />
-        <Route path='/content' element={<Content/>} />
+        {/* <Route path='/content' element={<Content/>} /> */}
+        <Route path='/content' element={<ContentCopy/>} />
       </Routes>
     
     );

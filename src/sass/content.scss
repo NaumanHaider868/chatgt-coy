@@ -1,5 +1,15 @@
 .dashboard-content {
-    margin-left: 55px;
+    position: absolute;
+    top: 66px;
+    right: -55px;
+    left: 18px;
+
+    @media (min-width:1920px) {
+        right: -194px;
+    }
+    @media (min-width:1370px) {
+        right: -50px;
+    }
 }
 
 .content-row {
@@ -15,10 +25,13 @@
 }
 
 .side-col-9 {
-    padding-left: 1px;
-    max-width: 85% !important;
-    min-width: 81%;
-    padding-right: 0;
+    // padding-left: 1px;
+    // max-width: 85% !important;
+    // min-width: 81%;
+    // padding-right: 0;
+    position: absolute;
+    left: 282px;
+    top: 0px;
 }
 
 .user-image-div {
@@ -31,12 +44,9 @@
     width: 38px;
     height: 38px;
     background-repeat: no-repeat;
-    // background-size: 38px 38px;
 }
 
 .user-div {
-    // height: 90px;
-    /* margin: auto; */
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -54,8 +64,6 @@
 }
 
 .chat-div {
-    // height: 90px;
-    /* margin: auto; */
     padding-top: 30px;
     padding-bottom: 30px;
     background: #F7F7F8;
@@ -96,6 +104,7 @@
             background-repeat: no-repeat;
             display: inline-block;
             margin-right: 5px;
+            cursor: pointer;
         }
 
         .dislike {
@@ -105,6 +114,7 @@
             background-repeat: no-repeat;
             display: inline-block;
             margin-right: 5px;
+            cursor: pointer;
         }
 
         .like {
@@ -114,6 +124,7 @@
             background-repeat: no-repeat;
             display: inline-block;
             margin-right: 5px;
+            cursor: pointer;
         }
     }
 }
@@ -224,8 +235,7 @@
 .selector-modal {
     width: 196px;
     background-image: url('../../public/img/arrow-down-2.svg');
-    color: #6F7984;
-    // height: 42px;
+    color: #6F7984
 }
 
 .textarea-div {
@@ -245,8 +255,13 @@
     }
 }
 
-.fixed-search{
+.fixed-search {
     position: fixed;
     bottom: 26px;
     right: 104px;
+
+    @media (min-width:1920px) {
+        bottom: 52px;
+        right: 375px;
+    }
 }
