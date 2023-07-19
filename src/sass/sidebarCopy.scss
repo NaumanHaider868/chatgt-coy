@@ -1,0 +1,321 @@
+.open-sidebar {
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    border: 1px solid #D5D7E3;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    left: 5px;
+    top: 7px;
+    background: #202123;
+    padding: 5px;
+
+    .icon {
+        width: 20px;
+        height: 20px;
+        background-image: url('../../public/img/Group2.svg');
+        background-repeat: no-repeat;
+        background-size: 19px 19px;
+        display: inline-block;
+        margin-top: 7px;
+    }
+}
+.sidebar {
+    // height: 100%;
+    min-height: 100vh;
+    // width: 21.10%;
+    width: 285px;
+    color: #fff;
+    background: #202123;
+    @media (max-width:767px) {
+        display: none;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.sidebar-top {
+    height: 20%;
+}
+
+.sidebar-menu {
+    height: 80%;
+    width: 100%;
+    padding: 11px;
+}
+
+.sidebar-content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.part-one {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 7px;
+    margin-left: 10px;
+
+    .chat {
+        margin-right: 10px;
+        border: 1px solid #D5D7E3;
+        border-radius: 3px;
+        display: flex;
+        justify-content: unset;
+        align-items: center;
+        width: 205px;
+        height: 46px;
+        cursor: pointer;
+        background: #202123;
+        color: #fff;
+        outline: none;
+    }
+
+    .new-chat {
+        padding-top: 10px;
+
+        // padding: 0;
+        p {
+            margin: 0;
+            padding-bottom: 12px;
+            padding-left: 6px;
+        }
+    }
+
+    .side-icon {
+        width: 46px;
+        height: 46px;
+        border: 1px solid #D5D7E3;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+}
+
+.part-two {
+    position: relative;
+    border: 1px solid #D5D7E3;
+    border-radius: 3px;
+    width: 260px;
+    height: 46px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    input {
+        background: #202123;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        color: #fff;
+
+        &:focus-visible {
+            border: none;
+        }
+
+        &::placeholder {
+            color: #fff;
+        }
+    }
+
+    .search-icon {
+        width: 20px;
+        height: 20px;
+        background-image: url('../../public/img/search-icon.svg');
+        background-repeat: no-repeat;
+        background-size: 15px 15px;
+        display: inline-block;
+        z-index: 1;
+        right: 0;
+        top: 14px;
+        background-size: 17px;
+    }
+}
+
+
+
+.plus-icon {
+    width: 20px;
+    height: 12px;
+    background-image: url('../../public/img/Add.svg');
+    background-repeat: no-repeat;
+    background-size: 13px 12px;
+    display: inline-block;
+    margin-left: 6px;
+}
+
+.sidebar-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url('../../public/img/Group2.svg');
+    background-repeat: no-repeat;
+    background-size: 19px 19px;
+    display: inline-block;
+}
+
+.sidebar-menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .heading {
+        color: #D5D7E3;
+        opacity: 0.7;
+        padding-left: 11px;
+
+        span {
+            font-size: 14px;
+        }
+    }
+
+    ul {
+        margin-left: -36px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        cursor: pointer;
+
+        &:hover {
+            background: #282A2E;
+            border-radius: 5px;
+        }
+
+        .icon {
+            margin-top: 8px;
+            width: 20px;
+            height: 20px;
+            background-image: url('../../public/img/message.svg');
+            background-repeat: no-repeat;
+            display: inline-block;
+        }
+    }
+
+    .text p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.sidebar-footer {
+    position: fixed;
+    // width: 285px;
+    width: 276px;
+    bottom: 0;
+    border-top: 1px solid #D5D7E3;
+    padding: 10px;
+
+    .icon {
+        background-image: url('../../public/img/menu.svg');
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        display: inline-block;
+        margin-top: 6px;
+    }
+
+    .templete-div {
+        display: flex;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        cursor: pointer;
+
+        p {
+            padding-left: 12px;
+            margin: 0
+        }
+
+        &:hover {
+            background: #282A2E;
+            border-radius: 5px;
+        }
+    }
+
+    .profile-section {
+        &:hover {
+            background: #282A2E;
+            border-radius: 5px;
+        }
+    }
+
+    .profile-div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        cursor: pointer;
+        position: relative;
+
+        p {
+            padding-left: 12px;
+            margin: 0
+        }
+
+        .profile-user {
+            display: flex;
+        }
+
+        .option-icon {
+            background-image: url('../../public/img/option.svg');
+            width: 20px;
+            height: 20px;
+            background-repeat: no-repeat;
+            display: inline-block;
+            position: absolute;
+            right: 5px;
+            top: 22px;
+        }
+
+
+
+    }
+
+    .profile-icon {
+        background-image: url('../../public/img/user.jpg');
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        display: inline-block;
+    }
+}
+
+.option-group {
+    position: absolute;
+    bottom: 61px;
+    right: 0px;
+    // border: 1px solid #ccc;
+    width: 100%;
+
+    .option-item {
+        background: black;
+
+        // margin-top: 1px;
+        // margin-bottom: 1px;
+        &:hover {
+            background: #282A2E;
+        }
+    }
+
+    .logout-border {
+        margin-top: 2px;
+        border-top: 1px solid;
+    }
+}
