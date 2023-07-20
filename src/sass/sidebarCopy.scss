@@ -22,7 +22,70 @@
         display: inline-block;
         margin-top: 7px;
     }
+    @media (max-width:767px) {
+        display: none;
+    }
 }
+
+.sidebar-btn-w-767 {
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    border: 1px solid #D5D7E3;
+    border-radius: 3px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    right: 10px;
+    top: 7px;
+    background: #202123;
+    padding: 5px;
+
+    @media (max-width:767px) {
+        display: flex;
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+        background-image: url('../../public/img/Group2.svg');
+        background-repeat: no-repeat;
+        background-size: 19px 19px;
+        display: inline-block;
+        margin-top: 7px;
+    }
+}
+
+.sidebar-w-767 {
+    position: absolute;
+    z-index: 1;
+    min-height: 100vh;
+    width: 285px;
+    color: #fff;
+    background: #202123;
+    box-shadow: 0px 30px 288px #ccc;
+
+    .part-one {
+        margin-right: 15px;
+        margin-left: 10px;
+
+        // .chat {
+        //     width: 100%;
+        //     margin-right: 0px;
+        // }
+    }
+
+    .part-two {
+        margin-left: 10px;
+        margin-right: 10px;
+
+        // input {
+        //     width: 100%;
+        // }
+    }
+}
+
 .sidebar {
     // height: 100%;
     min-height: 100vh;
@@ -30,6 +93,7 @@
     width: 285px;
     color: #fff;
     background: #202123;
+
     @media (max-width:767px) {
         display: none;
     }
@@ -38,7 +102,12 @@
 .hidden {
     display: none;
 }
-
+.hidden.sidebar-w-767{
+    display: block;
+}
+.hidden.sidebar-w-0{
+    display: none;
+}
 .sidebar-top {
     height: 20%;
 }
@@ -96,6 +165,10 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
+
+        @media (max-width:767px) {
+            // display: none;
+        }
     }
 }
 
@@ -182,6 +255,7 @@
     }
 
     li {
+        position: relative;
         display: flex;
         align-items: center;
         list-style: none;
@@ -208,6 +282,7 @@
     .text p {
         margin: 0;
         padding: 0;
+        color: #F5F6FA;
     }
 }
 
@@ -238,6 +313,7 @@
 
         p {
             padding-left: 12px;
+            color: #F5F6FA;
             margin: 0
         }
 
@@ -266,6 +342,7 @@
 
         p {
             padding-left: 12px;
+            color: #F5F6FA;
             margin: 0
         }
 
@@ -318,4 +395,34 @@
         margin-top: 2px;
         border-top: 1px solid;
     }
+}
+
+.delete {
+    background-image: url('../../public/img/delete.svg');
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.edit {
+    background-image: url('../../public/img/edit.svg');
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.share {
+    background-image: url('../../public/img/share.svg');
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.actions {
+    position: absolute;
+    right: 5px;
+    top: 17px;
 }

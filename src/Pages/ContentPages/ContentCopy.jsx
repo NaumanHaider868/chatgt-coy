@@ -163,10 +163,7 @@ function ContentCopy({isSidebarVisible}) {
                                             </div>
                                         </div>
                                     </div>
-
-
-
-
+                                    
                                 </div>
 
                                 <div className='bottom-content'>

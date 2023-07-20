@@ -1,11 +1,15 @@
 import React from 'react';
 // import '../../sass/sidebar.scss';
 import '../../sass/sidebarCopy.scss'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function Sidebar({ handleOpenModal }) {
     const [isDivVisible, setIsDivVisible] = useState(false);
+
+    //sidebar
     const [isSidebarVisible, setIsSidebarVisible] = useState(true);
+    const [sidebarW767, setSidebarW767] = useState(true);
+
     const handleClick = () => {
         setIsDivVisible(!isDivVisible);
     };
@@ -15,6 +19,30 @@ function Sidebar({ handleOpenModal }) {
     const handleClose = () => {
         setIsSidebarVisible(!isSidebarVisible);
     };
+    const handleW767 = () => {
+        setSidebarW767(!sidebarW767)
+        console.log(!sidebarW767, 'ce')
+    }
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    useEffect(() => {
+        if (windowWidth > 767) {
+            setSidebarW767(false);
+        }
+    }, [windowWidth]);
+    const shouldRemoveSidebar = windowWidth <= 767;
     return (
         // <div className='sidebar'>
         //     <div className='sidebar-content'>
@@ -218,12 +246,17 @@ function Sidebar({ handleOpenModal }) {
 
         // </div>
         <React.Fragment>
+            <div className='sidebar-btn-w-767' onClick={handleW767}>
+                <div className='sidebar-btn-w-767-div'>
+                    <div className="icon"></div>
+                </div>
+            </div>
             <div className={`tool open-sidebar ${isSidebarVisible ? 'hidden' : ''}`} onClick={handleClose} data-toggle="tooltip" data-placement="top" title="Open sidebar">
                 <div className='side-open-div'>
                     <div className="icon"></div>
                 </div>
             </div>
-            <div className={`sidebar ${isSidebarVisible ? '' : 'hidden'}`}>
+            <div className={`${isSidebarVisible && !shouldRemoveSidebar ? 'sidebar' : 'hidden'} ${sidebarW767 ? 'sidebar-w-767' : 'sidebar-w-0'}`}>
                 <div className='sidebar-content'>
                     <div className='sidebar-top'>
                         <div className='part-one'>
@@ -255,7 +288,12 @@ function Sidebar({ handleOpenModal }) {
                                 <li className='chat'>
                                     <div className='icon'></div>
                                     <div className='text'>
-                                        <p>Chat App Name Suggestions</p>
+                                        <p>Chat App Name Sugg</p>
+                                    </div>
+                                    <div className='actions'>
+                                        <div className="edit"></div>
+                                        <div className="share"></div>
+                                        <div className='delete'></div>
                                     </div>
                                 </li>
                             </ul>
