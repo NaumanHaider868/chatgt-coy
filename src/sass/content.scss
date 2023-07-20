@@ -186,8 +186,26 @@
 
 .modal-dialog {
     max-width: none;
-    margin: 1.95 auto;
+    margin: 1.95rem auto;
+    
 }
+.modal-dialog{
+    @media (max-width:700px) {
+        width: 85%;
+    }
+    // @media (max-width:530px) {
+    //     width: 70%;
+    // }
+}
+.modal-content{
+    @media (max-width:700px) {
+        width: 85%;
+    }
+    @media (max-width:575.98px) {
+        width: 70%;
+    }
+}
+
 
 .modal-footer-div {
     display: block;
@@ -235,7 +253,10 @@
 .selector-modal {
     width: 196px;
     background-image: url('../../public/img/arrow-down-2.svg');
-    color: #6F7984
+    color: #6F7984;
+    @media (max-width:767px) {
+        width: 100%;
+    }
 }
 
 .textarea-div {
@@ -251,6 +272,9 @@
 
         &:focus-visible {
             outline: none;
+        }
+        @media (max-width:767px) {
+            width: 100%;
         }
     }
 }

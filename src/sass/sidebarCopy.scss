@@ -1,3 +1,6 @@
+.contentClass{
+    opacity: 0.4;
+}
 .open-sidebar {
     position: absolute;
     width: 46px;
@@ -67,13 +70,15 @@
     box-shadow: 0px 30px 288px #ccc;
 
     .part-one {
-        margin-right: 15px;
+        margin-right: 6px;
         margin-left: 10px;
 
-        // .chat {
-        //     width: 100%;
-        //     margin-right: 0px;
-        // }
+        .chat {
+            width: 260px
+        }
+        .side-icon{
+            display: none;
+        }
     }
 
     .part-two {
@@ -283,6 +288,7 @@
         margin: 0;
         padding: 0;
         color: #F5F6FA;
+        padding-left: 4px;
     }
 }
 
@@ -373,7 +379,46 @@
         display: inline-block;
     }
 }
-
+.option{
+    display: flex;
+    align-items: center;
+    .delete {
+        background-image: url('../../public/img/delete.svg');
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        margin-top: 8px;
+        margin-right: 4px;
+    }
+    .help{
+        background-image: url('../../public/img/help.svg');
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        margin-top: 1px;
+        margin-right: 4px;
+        display: inline-block;
+    }
+    .setting{
+        background-image: url('../../public/img/setting.svg');
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        margin-top: 8px;
+        margin-right: 4px;
+        display: inline-block;
+    }
+    .logout{
+        background-image: url('../../public/img/logout.svg');
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        margin-top: 8px;
+        margin-right: 4px;
+        display: inline-block;
+    }
+}
 .option-group {
     position: absolute;
     bottom: 61px;
@@ -382,6 +427,7 @@
     width: 100%;
 
     .option-item {
+        cursor: pointer;
         background: black;
 
         // margin-top: 1px;
@@ -404,7 +450,6 @@
     height: 20px;
     display: inline-block;
 }
-
 .edit {
     background-image: url('../../public/img/edit.svg');
     background-repeat: no-repeat;

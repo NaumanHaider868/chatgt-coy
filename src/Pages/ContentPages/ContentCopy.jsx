@@ -4,7 +4,11 @@ import Navbar from '../componet/Navbar'
 import '../../sass/contentCopy.scss'
 import Modal from 'react-bootstrap/Modal';
 
-function ContentCopy({isSidebarVisible}) {
+function ContentCopy({ isSidebarVisible, contentClass1 }) {
+    const [contentClass, setContentClass] = useState('');
+    const toggleSidebarClass = (newClass) => {
+        setContentClass(newClass);
+    };
     const [show, setShow] = useState(false);
 
     const handleClose = () => {
@@ -16,8 +20,8 @@ function ContentCopy({isSidebarVisible}) {
     };
     return (
         <div className='wrapper'>
-            <Sidebar handleOpenModal={handleShow} isSidebarVisible={isSidebarVisible} />
-            <div className='main-wrapper'>
+            <Sidebar handleOpenModal={handleShow} isSidebarVisible={isSidebarVisible} toggleSidebarClass={toggleSidebarClass} />
+            <div className={`main-wrapper ${contentClass1}`}>
                 <Navbar />
                 <div className='dashboard'>
                     <div className='content'>
@@ -163,12 +167,13 @@ function ContentCopy({isSidebarVisible}) {
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
 
                                 <div className='bottom-content'>
                                     <div className='bottom-div'>
                                         <input type="text" placeholder='Send a message' className='input-send' />
+                                        <i className='search-icon'></i>
                                     </div>
                                 </div>
                             </div>
