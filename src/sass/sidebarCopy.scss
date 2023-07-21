@@ -211,7 +211,7 @@
         background-size: 15px 15px;
         display: inline-block;
         z-index: 1;
-        right: 0;
+        right: 8px;
         top: 14px;
         background-size: 17px;
     }
@@ -246,7 +246,7 @@
     .heading {
         color: #D5D7E3;
         opacity: 0.7;
-        padding-left: 11px;
+        padding-left: 7px;
 
         span {
             font-size: 14px;
@@ -254,7 +254,7 @@
     }
 
     ul {
-        margin-left: -36px;
+        margin-left: -41px;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
@@ -468,6 +468,6 @@
 
 .actions {
     position: absolute;
-    right: 5px;
+    right: 2px;
     top: 17px;
 }
