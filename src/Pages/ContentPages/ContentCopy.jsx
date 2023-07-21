@@ -2,7 +2,9 @@ import React, { useState } from 'react'
 import Sidebar from '../componet/Sidebar'
 import Navbar from '../componet/Navbar'
 import '../../sass/contentCopy.scss'
+import '../../sass/content.scss'
 import Modal from 'react-bootstrap/Modal';
+
 
 function ContentCopy({ isSidebarVisible, contentClass1 }) {
     const [contentClass, setContentClass] = useState('');

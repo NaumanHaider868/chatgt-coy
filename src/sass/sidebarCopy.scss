@@ -1,6 +1,7 @@
-.contentClass{
+.contentClass {
     opacity: 0.4;
 }
+
 .open-sidebar {
     position: absolute;
     width: 46px;
@@ -25,6 +26,7 @@
         display: inline-block;
         margin-top: 7px;
     }
+
     @media (max-width:767px) {
         display: none;
     }
@@ -76,7 +78,8 @@
         .chat {
             width: 260px
         }
-        .side-icon{
+
+        .side-icon {
             display: none;
         }
     }
@@ -107,12 +110,15 @@
 .hidden {
     display: none;
 }
-.hidden.sidebar-w-767{
+
+.hidden.sidebar-w-767 {
     display: block;
 }
-.hidden.sidebar-w-0{
+
+.hidden.sidebar-w-0 {
     display: none;
 }
+
 .sidebar-top {
     height: 20%;
 }
@@ -193,6 +199,7 @@
         padding: 10px;
         width: 100%;
         color: #fff;
+        position: absolute;
 
         &:focus-visible {
             border: none;
@@ -214,6 +221,8 @@
         right: 8px;
         top: 14px;
         background-size: 17px;
+        position: absolute;
+        right: 8px;
     }
 }
 
@@ -379,9 +388,11 @@
         display: inline-block;
     }
 }
-.option{
+
+.option {
     display: flex;
     align-items: center;
+
     .delete {
         background-image: url('../../public/img/delete.svg');
         background-repeat: no-repeat;
@@ -391,7 +402,8 @@
         margin-top: 8px;
         margin-right: 4px;
     }
-    .help{
+
+    .help {
         background-image: url('../../public/img/help.svg');
         background-repeat: no-repeat;
         width: 20px;
@@ -400,7 +412,8 @@
         margin-right: 4px;
         display: inline-block;
     }
-    .setting{
+
+    .setting {
         background-image: url('../../public/img/setting.svg');
         background-repeat: no-repeat;
         width: 20px;
@@ -409,7 +422,8 @@
         margin-right: 4px;
         display: inline-block;
     }
-    .logout{
+
+    .logout {
         background-image: url('../../public/img/logout.svg');
         background-repeat: no-repeat;
         width: 20px;
@@ -419,6 +433,7 @@
         display: inline-block;
     }
 }
+
 .option-group {
     position: absolute;
     bottom: 61px;
@@ -450,6 +465,7 @@
     height: 20px;
     display: inline-block;
 }
+
 .edit {
     background-image: url('../../public/img/edit.svg');
     background-repeat: no-repeat;

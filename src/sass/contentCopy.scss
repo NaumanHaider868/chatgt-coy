@@ -196,9 +196,11 @@ body {
     @media (max-width:1060px) {
         width: 615px;
     }
+
     @media (max-width:940px) {
         width: 500px;
     }
+
     @media (max-width:530px) {
         width: 450px;
     }
@@ -223,23 +225,28 @@ body {
     }
 }
 
-.col-8{
+.col-8 {
+
     // display: flex;
     // align-items: center;
-    p{
+    p {
         padding: 0;
         margin: 0;
     }
+
     @media (max-width:767px) {
         width: 88%;
     }
 }
-.first-col_2{
+
+.first-col_2 {
     @media (max-width:767px) {
         width: 12%;
     }
 }
-.col-1-icons{
+
+.col-1-icons {
+
     // display: flex;
     // justify-content: center;
     // align-items: center;
@@ -247,8 +254,62 @@ body {
         width: 43%;
     }
 }
-.max-w-767{
+
+.max-w-767 {
     @media (max-width:767px) {
         max-width: 767px;
+    }
+}
+
+
+// form page scss
+.form-dashboard{
+    width: 100%;
+    
+    margin: auto;
+
+    @media (max-width:1399.98px) {
+        width: 700px;
+    }
+    @media (max-width:1140px) {
+        width: 100%;
+    }
+}
+.form-container {
+    margin-top: 38px;
+}
+
+.zeta-form {
+    .form-items {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .box-shadow-none {
+            box-shadow: none;
+            outline: none;
+        }
+
+        .font-w-700 {
+            letter-spacing: 0.15px;
+            color: #2D333A;
+            font-weight: 700;
+        }
+
+        textarea {
+            width: 100%;
+            border: 1px solid #C2C8D0;
+            border-radius: 6px;
+        }
+    }
+
+    .btn-submit-form {
+        background: #10A37F;
+        color: #fff;
+        width: 150px;
+        height: 52px;
+        box-shadow: none;
+        border-radius: 6px;
+        // /* padding: 10px 40px 10px 40px;
     }
 }

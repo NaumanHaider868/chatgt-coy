@@ -2,8 +2,10 @@ import React from 'react';
 // import '../../sass/sidebar.scss';
 import '../../sass/sidebarCopy.scss'
 import { useState, useEffect } from 'react';
+import {useNavigate} from 'react-router-dom'
 
 function Sidebar({ handleOpenModal, toggleSidebarClass }) {
+    const navigate = useNavigate();
     const [isDivVisible, setIsDivVisible] = useState(false);
 
     //sidebar
@@ -44,6 +46,9 @@ function Sidebar({ handleOpenModal, toggleSidebarClass }) {
         }
     }, [windowWidth]);
     const shouldRemoveSidebar = windowWidth <= 767;
+    const handelGoForm = () =>{
+        navigate('/form')
+    }
     return (
         <React.Fragment>
             <div className='sidebar-btn-w-767' onClick={handleW767}>
@@ -60,7 +65,7 @@ function Sidebar({ handleOpenModal, toggleSidebarClass }) {
                 <div className='sidebar-content'>
                     <div className='sidebar-top'>
                         <div className='part-one'>
-                            <button className='chat'>
+                            <button className='chat' onClick={handelGoForm}>
                                 <i className='plus-icon'></i>
                                 <div className='new-chat'><p>New chat</p></div>
                             </button>
