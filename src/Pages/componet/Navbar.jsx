@@ -6,18 +6,6 @@ function Navbar() {
         <div className='navbar-1'>
             <div className='navbar-componet navbar-2'>
                 <ul className="nav-select">
-                    {/* <li className="nav-item">
-                        <a className="nav-link active" href="#">Active</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Link</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Link</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link disabled" href="#">Disabled</a>
-                    </li> */}
                     <select class="custom-select selector">
                         <option selected>Select Modle</option>
                         <option value="1">One</option>
