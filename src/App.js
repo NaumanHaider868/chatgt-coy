@@ -3,8 +3,8 @@ import { Route, Routes } from "react-router-dom";
 import NewAccount from "./Pages/NewAccount";
 import TellUs from "./Pages/TellUs";
 import Number from "./Pages/Number";
-import ContentCopy from './Pages/contentpages/ContentCopy.jsx'
-import Form from './Pages/contentpages/Form.jsx'
+import ContentCopy from './Pages/ContentCopy.jsx'
+import Form from './Pages/Form.jsx'
 
 function App() {
   return (

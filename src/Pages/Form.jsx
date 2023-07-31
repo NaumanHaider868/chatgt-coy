@@ -1,7 +1,7 @@
 import React from "react";
-import Sidebar from "../componet/Sidebar";
-import Navbar from "../componet/Navbar";
-import '../../sass/contentCopy.scss'
+import Sidebar from "./componet/Sidebar";
+import Navbar from "./componet/Navbar";
+import '../sass/contentCopy.scss'
 import { useState } from 'react'
 import Modal from 'react-bootstrap/Modal';
 
