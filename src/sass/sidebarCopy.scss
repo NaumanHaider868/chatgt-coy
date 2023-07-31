@@ -78,9 +78,10 @@ body {
     .part-one {
         margin-right: 6px;
         margin-left: 10px;
+        // text-decoration: none;
 
         .chat {
-            width: 260px
+            width: 260px;
         }
 
         .side-icon {
@@ -126,6 +127,9 @@ body {
 .sidebar-top {
     // height: 20%;
     height: 17vh;
+    a{
+        text-decoration: none;
+    }
 }
 
 .sidebar-menu {
