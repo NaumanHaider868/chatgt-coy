@@ -2,7 +2,7 @@ import React from 'react';
 // import '../../sass/sidebar.scss';
 import '../../sass/sidebarCopy.scss'
 import { useState, useEffect } from 'react';
-import {useNavigate} from 'react-router-dom'
+import { useNavigate,Link } from 'react-router-dom'
 
 function Sidebar({ handleOpenModal, toggleSidebarClass }) {
     const navigate = useNavigate();
@@ -46,7 +46,7 @@ function Sidebar({ handleOpenModal, toggleSidebarClass }) {
         }
     }, [windowWidth]);
     const shouldRemoveSidebar = windowWidth <= 767;
-    const handelGoForm = () =>{
+    const handelGoForm = () => {
         navigate('/form')
     }
     return (
@@ -65,10 +65,12 @@ function Sidebar({ handleOpenModal, toggleSidebarClass }) {
                 <div className='sidebar-content'>
                     <div className='sidebar-top'>
                         <div className='part-one'>
-                            <button className='chat' onClick={handelGoForm}>
+                            <Link to='/form'>
+                            <button className='chat'>
                                 <i className='plus-icon'></i>
                                 <div className='new-chat'><p>New chat</p></div>
                             </button>
+                            </Link>
                             <div className='side-icon' onClick={toggleSidebar}>
                                 <div className='sidebar-icon'></div>
                             </div>
@@ -85,108 +87,89 @@ function Sidebar({ handleOpenModal, toggleSidebarClass }) {
                             </div>
                             <ul>
                                 <li className='chat'>
-                                    <div className='icon'></div>
-                                    <div className='text'>
-                                        <p>Chat App Name Suggestions</p>
+                                    <div className="chat-content">
+                                        <div className='icon'></div>
+                                        <div className='text'>
+                                            <p>Chat App Name Sugg</p>
+                                        </div>
+                                        <div className='actions'>
+                                            <div className="edit"></div>
+                                            <div className="share"></div>
+                                            <div className='delete'></div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li className='chat'>
-                                    <div className='icon'></div>
-                                    <div className='text'>
-                                        <p>Chat App Name Sugg</p>
-                                    </div>
-                                    <div className='actions'>
-                                        <div className="edit"></div>
-                                        <div className="share"></div>
-                                        <div className='delete'></div>
+                                    <div className="chat-content">
+                                        <div className='icon'></div>
+                                        <div className='text'>
+                                            <p>Chat App Name Sugg</p>
+                                        </div>
                                     </div>
                                 </li>
                                 <li className='chat'>
-                                    <div className='icon'></div>
-                                    <div className='text'>
-                                        <p>Chat App Name Sugg</p>
-                                    </div>
-                                    <div className='actions'>
-                                        <div className="edit"></div>
-                                        <div className="share"></div>
-                                        <div className='delete'></div>
+                                    <div className="chat-content">
+                                        <div className='icon'></div>
+                                        <div className='text'>
+                                            <p>Chat App Name Sugg</p>
+                                        </div>
                                     </div>
                                 </li>
                                 <li className='chat'>
-                                    <div className='icon'></div>
-                                    <div className='text'>
-                                        <p>Chat App Name Sugg</p>
+                                    <div className="chat-content">
+                                        <div className='icon'></div>
+                                        <div className='text'>
+                                            <p>Chat App Name Sugg</p>
+                                        </div>
                                     </div>
-                                    <div className='actions'>
-                                        <div className="edit"></div>
-                                        <div className="share"></div>
-                                        <div className='delete'></div>
+
+                                </li>
+                                <li className='chat'>
+                                    <div className="chat-content">
+                                        <div className='icon'></div>
+                                        <div className='text'>
+                                            <p>Chat App Name Sugg</p>
+                                        </div>
                                     </div>
                                 </li>
                                 <li className='chat'>
-                                    <div className='icon'></div>
-                                    <div className='text'>
-                                        <p>Chat App Name Sugg</p>
-                                    </div>
-                                    <div className='actions'>
-                                        <div className="edit"></div>
-                                        <div className="share"></div>
-                                        <div className='delete'></div>
+                                    <div className="chat-content">
+                                        <div className='icon'></div>
+                                        <div className='text'>
+                                            <p>Chat App Name Sugg</p>
+                                        </div>
                                     </div>
                                 </li>
                                 <li className='chat'>
-                                    <div className='icon'></div>
-                                    <div className='text'>
-                                        <p>Chat App Name Sugg</p>
-                                    </div>
-                                    <div className='actions'>
-                                        <div className="edit"></div>
-                                        <div className="share"></div>
-                                        <div className='delete'></div>
+                                    <div className="chat-content">
+                                        <div className='icon'></div>
+                                        <div className='text'>
+                                            <p>Chat App Name Sugg</p>
+                                        </div>
                                     </div>
                                 </li>
                                 <li className='chat'>
-                                    <div className='icon'></div>
-                                    <div className='text'>
-                                        <p>Chat App Name Sugg</p>
-                                    </div>
-                                    <div className='actions'>
-                                        <div className="edit"></div>
-                                        <div className="share"></div>
-                                        <div className='delete'></div>
+                                    <div className="chat-content">
+                                        <div className='icon'></div>
+                                        <div className='text'>
+                                            <p>Chat App Name Sugg</p>
+                                        </div>
                                     </div>
                                 </li>
                                 <li className='chat'>
-                                    <div className='icon'></div>
-                                    <div className='text'>
-                                        <p>Chat App Name Sugg</p>
-                                    </div>
-                                    <div className='actions'>
-                                        <div className="edit"></div>
-                                        <div className="share"></div>
-                                        <div className='delete'></div>
+                                    <div className="chat-content">
+                                        <div className='icon'></div>
+                                        <div className='text'>
+                                            <p>Chat App Name Sugg</p>
+                                        </div>
                                     </div>
                                 </li>
                                 <li className='chat'>
-                                    <div className='icon'></div>
-                                    <div className='text'>
-                                        <p>Chat App Name Sugg</p>
-                                    </div>
-                                    <div className='actions'>
-                                        <div className="edit"></div>
-                                        <div className="share"></div>
-                                        <div className='delete'></div>
-                                    </div>
-                                </li>
-                                <li className='chat'>
-                                    <div className='icon'></div>
-                                    <div className='text'>
-                                        <p>Chat App Name Sugg</p>
-                                    </div>
-                                    <div className='actions'>
-                                        <div className="edit"></div>
-                                        <div className="share"></div>
-                                        <div className='delete'></div>
+                                    <div className="chat-content">
+                                        <div className='icon'></div>
+                                        <div className='text'>
+                                            <p>Chat App Name Sugg</p>
+                                        </div>
                                     </div>
                                 </li>
                             </ul>
@@ -197,15 +180,19 @@ function Sidebar({ handleOpenModal, toggleSidebarClass }) {
                             </div>
                             <ul>
                                 <li className='chat'>
-                                    <div className='icon'></div>
-                                    <div className='text'>
-                                        <p>Chat App Name Suggestions</p>
+                                    <div className="chat-content">
+                                        <div className='icon'></div>
+                                        <div className='text'>
+                                            <p>Chat App Name Sugg</p>
+                                        </div>
                                     </div>
                                 </li>
                                 <li className='chat'>
-                                    <div className='icon'></div>
-                                    <div className='text'>
-                                        <p>Chat App Name Suggestions</p>
+                                    <div className="chat-content">
+                                        <div className='icon'></div>
+                                        <div className='text'>
+                                            <p>Chat App Name Sugg</p>
+                                        </div>
                                     </div>
                                 </li>
 

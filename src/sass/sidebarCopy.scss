@@ -1,7 +1,8 @@
 .contentClass {
     opacity: 0.4;
 }
-body{
+
+body {
     overflow-y: hidden;
 }
 
@@ -254,9 +255,6 @@ body{
 }
 
 .sidebar-menu {
-    // display: flex;
-    // justify-content: center;
-    // flex-direction: column;
 
     .heading {
         color: #D5D7E3;
@@ -275,14 +273,19 @@ body{
     }
 
     li {
+
         position: relative;
         display: flex;
         align-items: center;
         list-style: none;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 10px;
         cursor: pointer;
+
+        .chat-content {
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
 
         &:hover {
             background: #282A2E;
@@ -304,6 +307,7 @@ body{
         padding: 0;
         color: #F5F6FA;
         padding-left: 4px;
+        font-size: 14.18px;
     }
 }
 
@@ -491,8 +495,11 @@ body{
 }
 
 .actions {
-    position: absolute;
-    // right: 2px;
-    right: -11px;
-    top: 17px;
+    // position: absolute;
+    // right: 0;
+    // top: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
 }
