@@ -25,9 +25,10 @@ function Login() {
         setCloseError(false)
         axios.post('https://foodapis.techenablers.info/api/login', payload)
             .then((res) => {
-                console.log(res.data.data.token);
-                navigate('/content');
                 localStorage.setItem('token', res.data.data.token)
+                // localStorage.setItem('login', true);
+                navigate('/content');
+
             })
             .catch((error) => {
                 setError(error.response.data.errors, 'error');

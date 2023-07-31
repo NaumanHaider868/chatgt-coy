@@ -46,8 +46,9 @@ function Sidebar({ handleOpenModal, toggleSidebarClass }) {
         }
     }, [windowWidth]);
     const shouldRemoveSidebar = windowWidth <= 767;
-    const handelGoForm = () => {
-        navigate('/form')
+    const handelGoLogin = () => {
+        localStorage.removeItem('token')
+        navigate('/')
     }
     return (
         <React.Fragment>
@@ -223,7 +224,7 @@ function Sidebar({ handleOpenModal, toggleSidebarClass }) {
                                             <div className='text'>Settings</div>
                                         </div>
                                     </li>
-                                    <li className="list-group-item option-item logout-border">
+                                    <li className="list-group-item option-item logout-border" onClick={handelGoLogin}>
                                         <div className='option'>
                                             <div className='logout'></div>
                                             <div className='text'>Log out</div>
