@@ -31,8 +31,8 @@ function NewAccount() {
             })
     }
     return (
-        <div className='login-page'>
-            <div className='login-box'>
+        <div className='login-page overflow-y-auto'>
+            <div className='login-box mt-206'>
                 <div className='login-logo'>
                     <h4>Create your account</h4>
                     <p>Note that phone verification may be required for signup. Your number will only be used to verify your identity for security purposes.</p>

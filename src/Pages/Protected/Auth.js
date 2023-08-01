@@ -11,7 +11,7 @@
                 setIsLoggedIn(false);
                 return navigate('/');
             } else {
-                setIsLoggedIn(true); // Set isLoggedIn to true if the user is logged in
+                setIsLoggedIn(true);
             }
         }
 
@@ -35,7 +35,7 @@
         // }
         return (
             <>
-                <Component />
+                {isLoggedIn ? <Component /> : null}
             </>
         );
     }

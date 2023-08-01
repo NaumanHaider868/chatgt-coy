@@ -12,19 +12,12 @@ function App() {
   const isLoggedIn = !!localStorage.getItem("token");
   return (
     <Routes>
-      <Route
-          path="/"
-          element={isLoggedIn ? <Navigate to="/content" /> : <Login />}
-        />
+      <Route path="/" element={isLoggedIn ? <Navigate to="/content" /> : <Login />} />
       <Route path='/newaccount' element={<NewAccount />} />
       <Route path='/telluseaboutyou' element={<TellUs />} />
       <Route path='/number' element={<Number />} />
-      <Route path='/content' element={<Auth Component={ContentCopy } />} />
-      {/* <Route
-        path="/content"
-        element={<Auth Component={ContentCopy} />}
-      /> */}
-      <Route path='/form' element={<Form />} />
+      <Route path='/content' element={<Auth Component={ContentCopy} />} />
+      <Route path='/form' element={<Auth Component={Form} />} />
     </Routes>
 
   );
