@@ -15,37 +15,28 @@ function NewAccount() {
     const navigate = useNavigate();
   
     let payload = {
-        first_name: first_name,
-        last_name: last_name,
-        username: name,
         email: email,
         password: password,
-        phone: phone,
-        password_confirmation: confirmPassword
     }
     const handelSignUp = (e) => {
         e.preventDefault();
-        axios.post('https://foodapis.techenablers.info/api/register', payload)
+        axios.post('https://787d-39-37-227-163.ngrok-free.app/api/signup', payload)
             .then((resp) => {
-                navigate('/content')
+                console.log(resp)
+                // navigate('/content')
             })
     }
     return (
         <div className='login-page overflow-y-auto'>
-            <div className='login-box mt-206'>
+            <div className='login-box'>
                 <div className='login-logo'>
                     <h4>Create your account</h4>
                     <p>Note that phone verification may be required for signup. Your number will only be used to verify your identity for security purposes.</p>
                 </div>
                 <div className='card'>
                     <div className='card-body'>
-                        <input type='text' placeholder='First Name' className='email-input' onChange={(e) => setFirstName(e.target.value)} />
-                        <input type='text' placeholder='Last Name' className='email-input' onChange={(e) => setLastName(e.target.value)} />
-                        <input type='text' placeholder='User Name' className='email-input' onChange={(e) => setName(e.target.value)} />
                         <input type='email' placeholder='Email address' className='email-input' onChange={(e) => setEmail(e.target.value)} />
                         <input type='password' placeholder='Password' className='email-input' onChange={(e) => setPassword(e.target.value)} />
-                        <input type='text' placeholder='Password Comfiration' className='email-input' onChange={(e) => setConfirmPassword(e.target.value)} />
-                        <input type='text' placeholder='Phone' className='email-input' onChange={(e) => setPhone(e.target.value)} />
                         <button className='btn btn-continue' onClick={handelSignUp}>Continue</button>
                         <div className='sign-para'>
                             <p>Already have an account? <span><Link style={{ color: '#10A37F' }} to='/'>Log in</Link></span></p>

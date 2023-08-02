@@ -6,35 +6,32 @@ import axios from 'axios'
 
 function Login() {
     const navigate = useNavigate();
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+    const [username, setUserName] = useState();
+    const [password, setPassword] = useState();
     const [error, setError] = useState([]);
-    const [closeError,setCloseError] = useState(false)
+    const [closeError, setCloseError] = useState(false)
 
-    let payload = {
-        email: email,
-        password: password
-    }
     const handleCloseError = () => {
         setCloseError(!closeError)
     }
     const clearErrors = () => {
         setError([]);
-      };
-    const handelLogin = () => {
-        setCloseError(false)
-        axios.post('https://foodapis.techenablers.info/api/login', payload)
-            .then((res) => {
-                localStorage.setItem('token', res.data.data.token)
-                // localStorage.setItem('login', true);
-                navigate('/content');
+    };
 
+    const handlePost = () => {
+        let payload = {
+            username: username,
+            password: password
+        }
+        console.log(payload)
+        axios.post('https://787d-39-37-227-163.ngrok-free.app/api/login', payload)
+            .then((res) => {
+                console.log(res, 'res')
             })
             .catch((error) => {
-                setError(error.response.data.errors, 'error');
-                setTimeout(clearErrors, 3000);
+                console.log(error)
             })
-    }
+    };
     return (
         <div className='login-page'>
             <div className='login-box'>
@@ -42,7 +39,7 @@ function Login() {
                     <h4>Welcome back</h4>
                 </div>
                 <div className='card mt-20'>
-                    {
+                    {/* {
                         error.length > 0 && error.map((e, i) => {
                             return (
                                 <React.Fragment>
@@ -57,22 +54,14 @@ function Login() {
                                 </React.Fragment>
                             )
                         })
-                    }
+                    } */}
                     <div className='card-body'>
-                        <input type='email' placeholder='Email address' name='email' className='email-input' onChange={(e) => setEmail(e.target.value)} />
-                        <input type='password' placeholder='Password' name='password' className='email-input' onChange={(e) => setPassword(e.target.value)} />
-                        <button className='btn btn-continue' onClick={handelLogin}>Continue</button>
+                        <input type='email' placeholder='Email address' name='username' value={username} className='email-input' onChange={(e) => setUserName(e.target.value)} />
+                        <input type='password' placeholder='Password' name='password' value={password} className='email-input' onChange={(e) => setPassword(e.target.value)} />
+                        <button className='btn btn-continue' onClick={handlePost}>Continue</button>
                         <div className='sign-para'>
                             <p>Don't have an account? <span><Link style={{ color: '#10A37F' }} to='/newaccount'>Sign up</Link></span></p>
                         </div>
-
-                        {/* <div className='card-body-bottom'>
-                            <div className='option'>
-                                <div className='hr-left'></div>
-                                <p>OR</p>
-                                <div className='hr-right'></div>
-                            </div>
-                        </div> */}
                     </div>
                 </div>
             </div>
